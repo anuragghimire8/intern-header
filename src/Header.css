@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Inter", sans-serif;
+  }
+  
+  .header {
+    position: relative;
+    display: flex;
+    padding: 2px;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background-color: grey;
+  }
+
+  .header:hover{
+    background-color: white;
+  }
+ .header:hover .heading{
+    color: black;
+ }
+
+ .header:hover .icons{
+    color: black;
+ }
+ .header:hover .navbar li a {
+   color: black; 
+ }
+
+  .navbar {
+    display: flex;
+   
+    list-style: none;
+    font-size: 20px;
+    color: white;
+  }
+  
+  .navbar li {
+    padding: 40px;
+    position: relative;
+  }
+  
+  .navbar li a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: white;
+    transition: color 0.3s ease-in-out;
+   
+  }
+  
+  
+  .navbar li a::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    transition: 0.5s ease-in-out, left 0.5s ease-in-out; 
+    background-color: blue;
+    position: absolute;
+    bottom: -5px;
+    left: -5%;
+  }
+  .navbar li a:hover::after{
+    left: 0;
+    width: 100%;
+  }
+  
+.heading{
+    padding: 12px;
+    color: white;
+}
+
+.icons{
+    font-size: 40px;
+}
+ 
+
+
+@media screen and (max-width: 768px) {
+    .header {
+     
+      height: auto;
+    }
+  
+    .navbar {
+      display: none;
+      
+    }
+  
+    .navbar li {
+      padding: 10px;
+      text-align: center;
+    }
+  }
+  
+
+  
+  
+  .another{
+      position: absolute;
+      height:100vh;
+      width: 100vw;
+    color: black;
+    display: flex;
+    gap:25px;
+    left: 0;
+    text-decoration: none;
+    list-style: none;  
+    top:2px;
+    background-color: blue;
+    justify-content: center;
+    gap:300px;
+  
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: white;
+    transition: color 0.3s ease-in-out;
+    
+}
+.another ul{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    gap:100px;
+    padding-top:400px;
+}
+
+
+.icon{
+    font-size: 40px;
+}
+
+
+
+.head{
+    padding:40px;
+    color: white;
+}
+
+@media  screen and (max-width: 1200px) {
+    .another {
+        width: 100vw;
+        gap:25px; 
+    }
+  
+    .another ul {
+        display: flex;
+        flex-direction: column;
+
+      padding-top: 100px; 
+    }
+  
+    .icon {
+      font-size: 30px; 
+    }
+  }
+  
+@media  screen and (min-width: 1200px) {
+    .another {
+      
+    }
+  
+    .another ul {
+      gap: 30px; 
+      padding-top: 200px; 
+    }
+  
+    .icon {
+      font-size: 50px; 
+    }
+  }

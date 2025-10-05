@@ -5,5 +5,5 @@ services:
     image: anuragghimire/header:latest
     
     ports:
-      - "8080:80"   # host port 8080 maps to container port 80
+      - "82:80"   # host port 8080 maps to container port 80
     restart: always

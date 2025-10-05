@@ -3,7 +3,7 @@ version: "3.9"
 services:
   header:
     image: anuragghimire/header:latest
-    container_name: header
+    
     ports:
       - "8080:80"   # host port 8080 maps to container port 80
     restart: always
